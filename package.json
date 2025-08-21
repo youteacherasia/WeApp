@@ -1,0 +1,49 @@
+{
+  "name": "weapp-improved",
+  "version": "2.0.0",
+  "description": "改善版WeChat小程序 - 現代的なベストプラクティス対応",
+  "main": "app.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "eslint . --ext .js,.ts --fix",
+    "test": "jest",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write \"**/*.{js,ts,json,md}\"",
+    "precommit": "npm run lint && npm run type-check",
+    "deploy:dev": "echo 'Development deployment'",
+    "deploy:prod": "echo 'Production deployment'"
+  },
+  "keywords": [
+    "wechat",
+    "miniprogram",
+    "typescript",
+    "improved",
+    "modern"
+  ],
+  "author": "youteacherasia",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/youteacherasia/WeApp.git"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%"
+  ]
+}
